@@ -1,0 +1,36 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+
+.grid {
+	
+	magrin-top:50px;
+	width: 1000px;
+	height: 500px;
+	margin: 100px auto 50px auto;
+	perspective: 500px; /*For 3d*/
+}
+.grid img {
+	width: 90px;
+	height: 90px;
+	display: block;
+	float: left;
+}
+.animate {
+	font: 15px Montserrat;
+	text-transform: uppercase;
+	background: rgb(0, 100, 0);
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	
+	margin: 0 auto;
+	margin-bottom:30px;
+	padding-top:8px;
+	width:100px;
+	height:30px;
+	text-align: center;display:block;
+	
+}
+.animate:hover {
+	background: rgb(0, 75, 0);
+}

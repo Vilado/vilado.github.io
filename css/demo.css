@@ -1,0 +1,10 @@
+body {
+  background: #ffffff;
+}
+
+div.photopile-wrapper {
+  margin: 20PX auto;
+width: 1300px;
+height:650px;
+background: url(../images/zhuomian.jpg)  no-repeat center 0;
+}

@@ -1,0 +1,71 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>  
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    
+</head>
+
+
+<body>
+
+<!-------------------login-------------------------->
+  <div class="page">
+  <div class="logo3"><img class="logo2" src="img/logo2.png"></div>
+    <div class="container">
+        <div class="left">
+            <a href="index.html"><img class="logo" src="img/temp/logo.png"></a>
+            <div class="login">注册</div>
+            <div class="eula">欢迎使用！<br>
+            <b>请点击<a href="index.html">这里</a>进入 <a href="index.html">北方民族大学在线游宣传网站首页</a></b>
+            </div>
+        </div>
+        <div class="right">
+           
+            <div class="form">
+             <form action="" method="post">
+                <label for="email"><span class="aaa" >账户：</span></label><br>
+                <input type="text" name="userName" value="" placeholder="昵称/邮箱/手机号">
+                <br><br>
+                <label for="password"><span class="aaa" >密码：</span></label><br>
+                <input type="text" name="passWord" value="" placeholder="密码">
+                <br><br>
+                <div class="OneButton denglu">登  录</div>
+                
+                <br>
+                <p class="txt"><a class="fl" href="reg.html" >免费注册</a><a class="fr" href="forget.html">忘记密码？</a></p>
+              </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jAlert.js"></script>
+<script>
+	var log = console.log.bind(console);
+	$(function () {
+		/* 注解
+		 * jAlert 和 jConfirm 总共支持四个参数, 第一个参数为弹出窗的头部区域
+		  * 第二个参数为 要提示的消息
+		  * 第三个参数 和 第四个参数可不传, 第三个参数如果不传默认的显示按钮内容为确定, 若传极为传递参数
+		  * 第四个参数为点击按钮后执行的回调函数*/
+		
+		$(".OneButton").click(function () {
+			jAlert('提示', '很抱歉，网站暂时还没开通用户登录注册以及其他操作，<br>您可以进入首页浏览页面！', '确定')
+		});
+
+		$(".TwoButton").click(function () {
+			jConfirm('重要提示', '该操作不可恢复, 是否继续该操作？', '确定', function (e) {
+				log('操作成功！')
+			})
+		});
+	})
+</script>
+
+
+
+</body>
+</html>
+
